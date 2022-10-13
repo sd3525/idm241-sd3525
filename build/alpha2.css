@@ -213,17 +213,20 @@ body {
   .flexbox-item-1 {
     display: block;
     width: 150px;
+    margin-right: 2rem;
   }
 
   .flexbox-item-2 {
     display: block;
     width: 150px;
+    margin-right: 2rem;
   }
 
   .flexbox-item-3 {
     display: block;
     width: 150px;
     margin-bottom: 5rem;
+    margin-right: 2rem;
   }
 
   .flexbox-item-4 {
