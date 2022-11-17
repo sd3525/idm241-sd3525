@@ -34,6 +34,13 @@ a:link :active {
   text-decoration: underline;
 }
 
+.copyright {
+  margin-bottom: 1rem;
+  font-size: 0.7rem;
+  font-family: var(--font-1);
+  text-align: center;
+}
+
 @media screen and (min-width: 0px) {
   .center {
     display: block;
@@ -79,10 +86,12 @@ a:link :active {
 
   .flexbox-container {
     display: flex;
-    align-items: ;
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   .flexbox-item-1 {
@@ -111,6 +120,11 @@ a:link :active {
   .flexbox-item-7 {
     margin-left: 1rem;
   }
+
+  .flexbox-item-8 {
+    margin-left: 1rem;
+    margin-bottom: 5rem;
+  }
   .subhead {
     padding-top: 3rem;
     font-size: 1.3rem;
@@ -118,6 +132,7 @@ a:link :active {
     font-family: futura-pt, sans-serif;
     font-weight: 700;
     font-style: normal;
+    text-align: left;
   }
 
   .details {
@@ -127,6 +142,7 @@ a:link :active {
     font-family: futura-pt, sans-serif;
     font-weight: 600;
     font-style: normal;
+    text-align: left;
   }
 
   .details2 {
@@ -136,6 +152,7 @@ a:link :active {
     font-family: var(--font-1);
     font-weight: 700;
     font-style: normal;
+    text-align: left;
   }
 
   .glf {
@@ -206,6 +223,7 @@ a:link :active {
   .flexbox-container {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
 
   .flexbox-item-1 {
@@ -229,7 +247,7 @@ a:link :active {
   }
 
   .flexbox-item-5 {
-    align-items: center;
+    /* align-items: center; */
     margin-left: 2rem;
   }
 
@@ -245,6 +263,7 @@ a:link :active {
     font-family: futura-pt, sans-serif;
     font-weight: 700;
     font-style: normal;
+    text-align: left;
   }
 
   .details {
@@ -254,6 +273,7 @@ a:link :active {
     font-family: futura-pt, sans-serif;
     font-weight: 600;
     font-style: normal;
+    text-align: left;
   }
 
   .details2 {
@@ -264,7 +284,6 @@ a:link :active {
     font-weight: 700;
     font-style: normal;
     text-align: left;
-    margin-left: 1.5rem;
   }
 
   .glf {
@@ -308,17 +327,22 @@ a:link :active {
   .center {
     display: block;
     margin: auto;
-    width: 95%;
+    width: 50%;
   }
 
   hr {
     display: block;
-    min-width: 400px;
+    min-width: 100px;
     height: 1px;
     width: 100%;
     border: 0;
     border-top: 2px solid rgb(0, 0, 0);
     margin-top: 1rem;
     text-align: center;
+  }
+
+  .flexbox-item-8 {
+    margin-left: 1rem;
+    margin-bottom: 3rem;
   }
 }
