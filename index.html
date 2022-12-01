@@ -4,74 +4,144 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IDM 241 Final Description</title>
-    <link rel="stylesheet" href="beta1.css" />
+    <title>IDM241 Final Build</title>
+    <link rel="stylesheet" href="beta3.css" />
     <link rel="stylesheet" href="https://use.typekit.net/rik6xfo.css" />
+    <script src="click.js"></script>
   </head>
   <body>
-    <header class="header">IDM 241 Final Description</header>
-    <div class="title">
-      Original Microinteraction:
-      <a href="https://golflefleur.com/" target="_blank">Golf le Fleur</a>
-    </div>
-    <hr />
-    <div class="flexbox-container">
-      <div class="flexbox-item-1">
-        <div class="subhead">Triggers:</div>
-        <div class="details">Hover on and off of cart</div>
-        <div class="details">Click on cart</div>
-      </div>
-      <div class="flexbox-item-2">
-        <div class="subhead">Rules:</div>
-
-        <div class="details2">HOVER ON</div>
-        <div class="details">Cursor changes from pointer to finger</div>
-        <div class="details">Cart gets bigger</div>
-        <div class="details2">HOVER OFF</div>
-        <div class="details">Cursor changes from finger to pointer</div>
-        <div class="details">Cart goes back to normal size</div>
-
-        <div class="details2">CLICK</div>
-        <div class="details">Number 1 pops up over the cart</div>
-      </div>
-      <div class="flexbox-item-3">
-        <div class="subhead">Feedback:</div>
-
-        <div class="details2">HOVER ON</div>
-        <div class="details">Cursor changes from pointer to finger</div>
-        <div class="details">Cart gets bigger</div>
-        <div class="details2">HOVER OFF</div>
-        <div class="details">Cursor changes from finger to pointer</div>
-        <div class="details">Cart goes back to normal size</div>
-
-        <div class="details2">CLICK</div>
-        <div class="details">Number 1 pops up over the cart</div>
-      </div>
-      <div class="flexbox-item-4">
-        <div class="subhead">Loops/Modes:</div>
-        <div class="details">Number 1 pops up over the cart</div>
-      </div>
-    </div>
-    <div class="title">New Microinteraction:</div>
-    <hr />
-    <div class="flexbox-container">
-      <div class="flexbox-item-5">
-        <img src="images/glf1.png" alt="glf" class="glf" />
-      </div>
-      <div class="flexbox-item-6">
-        <img src="images/glf2.png" alt="glf" class="glf" />
+    <div class="center">
+      <header class="header">IDM 241 Final Build</header>
+      <div class="title">Microinteraction:</div>
+      <hr />
+      <div class="product">
+        <div class="main-img">
+          <img src="img/orangelarge.png" class="pro-img" alt="product" />
+        </div>
+        <div class="thumb-img">
+          <div class="box active" onclick="changeImage(this)">
+            <img src="img/orangelarge.png" alt="thumb" />
+          </div>
+          <div class="box" onclick="changeImage(this)">
+            <img src="img/brownlarge.png" alt="thumb" />
+          </div>
+          <div class="box" onclick="changeImage(this)">
+            <img src="img/whitelarge.png" alt="thumb" />
+          </div>
+        </div>
       </div>
 
-      <div class="flexbox-item-7">
-        <img src="images/glf3.png" alt="glf" class="glf" />
-      </div>
+      <script>
+        const thumbs = document.querySelector(".thumb-img").children;
 
-      <div class="flexbox-item-7">
-        <img src="images/glf4.png" alt="glf" class="glf" />
-      </div>
+        function changeImage(event) {
+          document.querySelector(".pro-img").src = event.children[0].src;
 
-      <div class="flexbox-item-8">
-        <img src="images/glf5.png" alt="glf" class="glf" />
+          for (let i = 0; i < thumbs.length; i++) {
+            thumbs[i].classList.remove("active");
+          }
+          event.classList.add("active");
+        }
+      </script>
+      <div class="pic">
+        <img id="bannerImage" src="images/orangelarge.png" />
+        <p id="text">GLF 2.0</p>
+
+        <div class="shoegroup">
+          <button onclick="changeImage('images/whitelarge.png')">
+            <img
+              src="images/whitelarge.png"
+              alt="Go to image 1"
+              width="50px"
+              height="50px"
+            />
+          </button>
+          <button onclick="changeImage('images/brownlarge.png')">
+            <img
+              src="images/brownlarge.png"
+              alt="Go to image 1"
+              width="50px"
+              height="50px"
+            />
+          </button>
+          <button onclick="changeImage('images/orangelarge.png')">
+            <img
+              src="images/orangelarge.png"
+              alt="Go to image 1"
+              width="50px"
+              height="50px"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="title2">Microinteraction Structure:</div>
+      <hr />
+      <div class="flexbox-container">
+        <div class="flexbox-item-1">
+          <div class="subhead">Triggers:</div>
+          <div class="details">Hover on and off of card</div>
+          <div class="details">Hover on and off of little sneaker</div>
+          <div class="details">Click on little sneaker</div>
+          <div class="details">Hover on and off of cart</div>
+          <div class="details">Click on cart</div>
+        </div>
+        <div class="flexbox-item-2">
+          <div class="subhead">Rules:</div>
+
+          <div class="details2">HOVER ON CARD</div>
+          <div class="details">Cursor changes from pointer to finger</div>
+          <div class="details">2px border, glf 2.0, and cart fades in</div>
+          <div class="details2">HOVER ON SMALL SNEAKER</div>
+          <div class="details">1px border fades in</div>
+          <div class="details2">HOVER ON SMALL CART</div>
+          <div class="details">Cart gets bigger</div>
+          <div class="details2">HOVER OFF CARD</div>
+          <div class="details">Cursor changes from finger to pointer</div>
+          <div class="details">2px border, glf 2.0, and cart fades out</div>
+          <div class="details2">HOVER OFF SMALL SNEAKER</div>
+          <div class="details">1px border fades out</div>
+          <div class="details2">HOVER OFF SMALL CART</div>
+          <div class="details">Cart goes back to normal size</div>
+
+          <div class="details2">CLICK ON SMALL SNEAKER</div>
+          <div class="details">
+            Large sneaker image fades to a new sneaker image
+          </div>
+          <div class="details2">CLICK ON CART</div>
+          <div class="details">Number 1 pops up over the cart</div>
+        </div>
+        <div class="flexbox-item-3">
+          <div class="subhead">Feedback:</div>
+
+          <div class="details2">HOVER ON CARD</div>
+          <div class="details">Cursor changes from pointer to finger</div>
+          <div class="details">2px border, glf 2.0, and cart fades in</div>
+          <div class="details2">HOVER ON SMALL SNEAKER</div>
+          <div class="details">1px border fades in</div>
+          <div class="details2">HOVER ON SMALL CART</div>
+          <div class="details">Cart gets bigger</div>
+          <div class="details2">HOVER OFF CARD</div>
+          <div class="details">Cursor changes from finger to pointer</div>
+          <div class="details">2px border, glf 2.0, and cart fades out</div>
+          <div class="details2">HOVER OFF SMALL SNEAKER</div>
+          <div class="details">1px border fades out</div>
+          <div class="details2">HOVER OFF SMALL CART</div>
+          <div class="details">Cart goes back to normal size</div>
+
+          <div class="details2">CLICK ON SMALL SNEAKER</div>
+          <div class="details">
+            Large sneaker image fades to a new sneaker image
+          </div>
+          <div class="details2">CLICK ON CART</div>
+          <div class="details">Number 1 pops up over the cart</div>
+        </div>
+
+        <div class="flexbox-item-4">
+          <div class="subhead">Loops/Modes:</div>
+          <div class="details">GLF 2.0 and cart fade in</div>
+          <div class="details">New large sneaker image fades in</div>
+          <div class="details">Number 1 pops up over the cart</div>
+        </div>
       </div>
     </div>
     <div class="copyright">

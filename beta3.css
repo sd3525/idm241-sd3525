@@ -1,0 +1,547 @@
+:root {
+  --text-color: #161616;
+  --font-1: futura-pt-bold, sans-serif;
+}
+
+body {
+  background: #fefaef;
+  overflow-x: hidden;
+  align-content: center;
+}
+
+.center {
+  margin: auto;
+  width: 90%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.product {
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fefaef;
+  border: 2px solid #8ea1af;
+  height: 80vh;
+  width: 70vh;
+}
+.product .main-img img {
+  max-width: 500px;
+  margin: auto;
+  display: block;
+}
+.product .thumb-img {
+  text-align: center;
+}
+.product .thumb-img .box {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #8ea1af;
+  margin: 2px;
+  cursor: pointer;
+}
+.product .thumb-img .box.active {
+  border-color: #545454;
+}
+.product .thumb-img .box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (min-width: 0px) {
+  .span {
+    content: "\00A9";
+  }
+  .center {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+
+  body {
+    background: #fefaef;
+    overflow-x: hidden;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    padding: 0;
+  }
+
+  hr {
+    display: block;
+    height: 1px;
+    width: 90%;
+    border: 0;
+    border-top: 2px solid rgb(0, 0, 0);
+    margin: 0.01em 0;
+    margin-top: 1rem;
+  }
+
+  .header {
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: normal;
+    font-family: var(--font-1);
+  }
+
+  .title2 {
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    font-family: var(--font-1);
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    align-items: column;
+  }
+
+  .flexbox-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .flexbox-item-1 {
+    display: block;
+    margin-right: 1rem;
+  }
+
+  .flexbox-item-2 {
+    display: block;
+    margin-right: 1rem;
+  }
+
+  .flexbox-item-3 {
+    display: block;
+    margin-right: 1rem;
+  }
+
+  .subhead {
+    padding-top: 3rem;
+    font-size: 1.3rem;
+    font-family: var(--font-1);
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .details {
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    width: 150px;
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .details2 {
+    padding-top: 1.3rem;
+    font-size: 1.1rem;
+    width: 150px;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  #glf {
+    display: flex;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    width: 190px;
+    height: 190px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pic {
+    margin-top: 3rem;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    z-index: 1;
+  }
+
+  #text {
+    margin-top: -8rem;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    opacity: 0;
+    letter-spacing: 2px;
+    font-family: var(--font-1);
+    text-align: center;
+    visibility: hidden;
+  }
+
+  .pic:hover #text {
+    transition: all ease 0.3s;
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+    z-index: 7;
+  }
+
+  .title {
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    font-family: var(--font-1);
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+  }
+
+  button {
+    width: 60px;
+    height: 60px;
+    z-index: 7;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 10px;
+  }
+
+  button:hover {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    background-color: transparent;
+    transition: color;
+    z-index: 7;
+  }
+
+  #bannerImage {
+    cursor: pointer;
+    padding-bottom: 30px;
+    height: 190px;
+    width: 190px;
+  }
+
+  .pic:hover {
+    cursor: pointer;
+    opacity: 0.4;
+    color: rgba(255, 255, 255, 0.874);
+    transition: color;
+    border: 2px solid black;
+    transition: border;
+    padding-bottom: 10px;
+  }
+
+  .img {
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+  }
+
+  .shoegroup {
+    margin-top: 6px;
+    justify-content: center;
+    padding-left: 3px;
+    z-index: 100;
+  }
+
+  .shoegrounp:hover {
+    transition: 0.4s ease-in;
+    z-index: 10;
+  }
+
+  .span {
+    content: "\00A9";
+  }
+
+  .copyright {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+    font-family: var(--font-1);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .span {
+    content: "\00A9";
+  }
+
+  .copyright {
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+    font-family: var(--font-1);
+  }
+
+  .center {
+    display: block;
+    margin: auto;
+    width: 70%;
+  }
+
+  body {
+    background: #fefaef;
+    overflow-x: hidden;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+  }
+
+  .header {
+    margin-top: 3rem;
+    font-size: 7rem;
+    font-weight: 700;
+    font-style: normal;
+    font-family: var(--font-1);
+  }
+
+  .title {
+    margin-top: 5rem;
+    font-size: 1.9rem;
+    font-family: var(--font-1);
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .title2 {
+    font-size: 1.9rem;
+    font-family: var(--font-1);
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .flexbox-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .flexbox-item-1 {
+    display: block;
+    width: 170px;
+    margin-right: 2rem;
+  }
+
+  .flexbox-item-2 {
+    display: block;
+    width: 170px;
+    margin-right: 2rem;
+  }
+
+  .flexbox-item-3 {
+    display: block;
+    width: 170px;
+    margin-bottom: 5rem;
+    margin-right: 2rem;
+  }
+
+  .flexbox-item-4 {
+    display: block;
+    width: 170px;
+    margin-bottom: 5rem;
+  }
+
+  .subhead {
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    font-family: var(--font-1);
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+  }
+
+  .details {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    width: 150px;
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: left;
+  }
+
+  .details2 {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    width: 150px;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+  }
+
+  #glf {
+    width: 300px;
+    height: 300px;
+    align-content: center;
+    z-index: 1;
+  }
+
+  .shoegroup {
+    padding-top: 8px;
+  }
+
+  .shoegroup:hover {
+    transition: 0.4s ease-in;
+    z-index: 10;
+    display: block;
+  }
+
+  .small1 {
+    width: 65px;
+    height: 65px;
+    align-content: center;
+    margin-right: 10px;
+  }
+
+  .small1:hover {
+    display: block;
+    cursor: pointer;
+    opacity: 0.4;
+    border: 2px solid black;
+    z-index: 1;
+  }
+
+  .small2 {
+    width: 65px;
+    height: 65px;
+    align-content: center;
+    margin-right: 10px;
+  }
+
+  .small2:hover {
+    display: block;
+    cursor: pointer;
+    opacity: 0.4;
+    border: 2px solid black;
+  }
+
+  .small3 {
+    width: 65px;
+    height: 65px;
+    align-content: center;
+  }
+
+  .small3:hover {
+    display: block;
+    cursor: pointer;
+    opacity: 0.4;
+    border: 2px solid black;
+  }
+
+  .shoegroup {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    z-index: 100;
+  }
+
+  .pic {
+    margin: auto;
+    margin-top: 3rem;
+    width: 300px;
+    height: 300px;
+  }
+
+  #text {
+    margin-top: -10rem;
+    padding: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    opacity: 0;
+    letter-spacing: 2px;
+    font-family: var(--font-1);
+    text-align: center;
+    visibility: hidden;
+  }
+
+  .pic:hover {
+    opacity: 1;
+    cursor: pointer;
+    z-index: 1;
+    visibility: visible;
+  }
+
+  .#text:hover {
+    opacity: 1;
+    cursor: pointer;
+    z-index: 7;
+    visibility: visible;
+  }
+
+  hr {
+    display: block;
+    min-width: 400px;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    border-top: 2px solid rgb(0, 0, 0);
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  button {
+    width: 50px;
+    height: 50px;
+    z-index: 7;
+    border: none;
+    background-color: transparent;
+  }
+  .img {
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+  }
+
+  button {
+    width: 70px;
+    height: 70px;
+    border: none;
+    background-color: transparent;
+    z-index: 7;
+  }
+
+  button:hover {
+    width: 70px;
+    height: 70px;
+    z-index: 7;
+    border: 1px solid black;
+    background-color: transparent;
+    transition: color;
+    cursor: pointer;
+  }
+
+  #bannerImage {
+    display: block;
+    cursor: pointer;
+    padding-bottom: 30px;
+    height: 300px;
+    width: 300px;
+  }
+
+  #bannerImage:hover {
+    display: block;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: color;
+    transition: border;
+    padding-bottom: 30px;
+  }
+
+  .pic:hover {
+    display: block;
+    cursor: pointer;
+    opacity: 0.4;
+    color: rgba(255, 255, 255, 0.874);
+    transition: color;
+    border: 2px solid black;
+    transition: border;
+    padding-bottom: 30px;
+    cursor: pointer;
+  }
+}
