@@ -4,146 +4,130 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IDM241 Final Build</title>
-    <link rel="stylesheet" href="beta3.css" />
+    <title>IDM241 Case Study</title>
+    <link rel="stylesheet" href="case_style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/rik6xfo.css" />
-    <script src="click.js"></script>
   </head>
   <body>
+    <img src="img/banner2.png" class="banner" alt="banner" />
+
     <div class="center">
-      <header class="header">IDM 241 Final Build</header>
-      <div class="title">Microinteraction:</div>
+      <header class="header">IDM 241 Case Study</header>
+      <a href="https://golflefleur.com/collections/shop-all" target="_blank"
+        >Golf le Fleur</a
+      >
+      <div class="title">The Overview:</div>
       <hr />
-      <div class="product">
-        <div class="main-img">
-          <img src="img/orangelarge.png" class="pro-img" alt="product" />
-        </div>
-        <div class="thumb-img">
-          <div class="box active" onclick="changeImage(this)">
-            <img src="img/orangelarge.png" alt="thumb" />
-          </div>
-          <div class="box" onclick="changeImage(this)">
-            <img src="img/brownlarge.png" alt="thumb" />
-          </div>
-          <div class="box" onclick="changeImage(this)">
-            <img src="img/whitelarge.png" alt="thumb" />
-          </div>
-        </div>
+      <div class="details">
+        For this project, I was assigned to create a micro-interaction with 5
+        triggers for a website. I created a quick add option for the website:
+        Golf le Fleur. A user can preview the name of the shoe, the different
+        color options, and add to cart. One of the problems that I ran into was
+        making the cart icon change to show a number one above it on click. I
+        figured it out through research and understanding that the order of my
+        variables can impact the functionality of my code. This was the last
+        part of my code that I needed to figure out so once it was functioning
+        my micro-interaction was done!
       </div>
-
-      <script>
-        const thumbs = document.querySelector(".thumb-img").children;
-
-        function changeImage(event) {
-          document.querySelector(".pro-img").src = event.children[0].src;
-
-          for (let i = 0; i < thumbs.length; i++) {
-            thumbs[i].classList.remove("active");
-          }
-          event.classList.add("active");
-        }
-      </script>
-      <div class="pic">
-        <img id="bannerImage" src="images/orangelarge.png" />
-        <p id="text">GLF 2.0</p>
-
-        <div class="shoegroup">
-          <button onclick="changeImage('images/whitelarge.png')">
-            <img
-              src="images/whitelarge.png"
-              alt="Go to image 1"
-              width="50px"
-              height="50px"
-            />
-          </button>
-          <button onclick="changeImage('images/brownlarge.png')">
-            <img
-              src="images/brownlarge.png"
-              alt="Go to image 1"
-              width="50px"
-              height="50px"
-            />
-          </button>
-          <button onclick="changeImage('images/orangelarge.png')">
-            <img
-              src="images/orangelarge.png"
-              alt="Go to image 1"
-              width="50px"
-              height="50px"
-            />
-          </button>
-        </div>
-      </div>
-      <div class="title2">Microinteraction Structure:</div>
+      <div class="title2">Context and Challenge:</div>
       <hr />
       <div class="flexbox-container">
         <div class="flexbox-item-1">
-          <div class="subhead">Triggers:</div>
-          <div class="details">Hover on and off of card</div>
-          <div class="details">Hover on and off of little sneaker</div>
-          <div class="details">Click on little sneaker</div>
-          <div class="details">Hover on and off of cart</div>
-          <div class="details">Click on cart</div>
-        </div>
-        <div class="flexbox-item-2">
-          <div class="subhead">Rules:</div>
-
-          <div class="details2">HOVER ON CARD</div>
-          <div class="details">Cursor changes from pointer to finger</div>
-          <div class="details">2px border, glf 2.0, and cart fades in</div>
-          <div class="details2">HOVER ON SMALL SNEAKER</div>
-          <div class="details">1px border fades in</div>
-          <div class="details2">HOVER ON SMALL CART</div>
-          <div class="details">Cart gets bigger</div>
-          <div class="details2">HOVER OFF CARD</div>
-          <div class="details">Cursor changes from finger to pointer</div>
-          <div class="details">2px border, glf 2.0, and cart fades out</div>
-          <div class="details2">HOVER OFF SMALL SNEAKER</div>
-          <div class="details">1px border fades out</div>
-          <div class="details2">HOVER OFF SMALL CART</div>
-          <div class="details">Cart goes back to normal size</div>
-
-          <div class="details2">CLICK ON SMALL SNEAKER</div>
+          <div class="subhead">Background:</div>
           <div class="details">
-            Large sneaker image fades to a new sneaker image
+            On week one of class we were assigned to create a fully functioning
+            micro-interaction with 5 triggers in order to improve a website of
+            our choice. We were given 11 weeks to complete the 5 interactions,
+            but it was split up into a alpha, beta, and a final build stage. We
+            had around 2 weeks to create the one alpha trigger, 3 weeks to
+            create 2 more beta triggers, and 4 weeks to create the final 2
+            triggers for the final.
           </div>
-          <div class="details2">CLICK ON CART</div>
-          <div class="details">Number 1 pops up over the cart</div>
-        </div>
-        <div class="flexbox-item-3">
-          <div class="subhead">Feedback:</div>
-
-          <div class="details2">HOVER ON CARD</div>
-          <div class="details">Cursor changes from pointer to finger</div>
-          <div class="details">2px border, glf 2.0, and cart fades in</div>
-          <div class="details2">HOVER ON SMALL SNEAKER</div>
-          <div class="details">1px border fades in</div>
-          <div class="details2">HOVER ON SMALL CART</div>
-          <div class="details">Cart gets bigger</div>
-          <div class="details2">HOVER OFF CARD</div>
-          <div class="details">Cursor changes from finger to pointer</div>
-          <div class="details">2px border, glf 2.0, and cart fades out</div>
-          <div class="details2">HOVER OFF SMALL SNEAKER</div>
-          <div class="details">1px border fades out</div>
-          <div class="details2">HOVER OFF SMALL CART</div>
-          <div class="details">Cart goes back to normal size</div>
-
-          <div class="details2">CLICK ON SMALL SNEAKER</div>
+          <div class="subhead">The Problem:</div>
           <div class="details">
-            Large sneaker image fades to a new sneaker image
+            This project teaches students how micro-interactions can really
+            enhance a website and ultimately make it more engaging and
+            intuitive. It was important for us as students to learn how to
+            implement them so that we could ultimately better a website that we
+            didn't didn't originally see to be intuitive.
           </div>
-          <div class="details2">CLICK ON CART</div>
-          <div class="details">Number 1 pops up over the cart</div>
-        </div>
-
-        <div class="flexbox-item-4">
-          <div class="subhead">Loops/Modes:</div>
-          <div class="details">GLF 2.0 and cart fade in</div>
-          <div class="details">New large sneaker image fades in</div>
-          <div class="details">Number 1 pops up over the cart</div>
+          <div class="subhead">Goals & Objectives:</div>
+          <div class="details">
+            The project will be considered successful if the full 5 trigger
+            micro-interaction functions and is described properly and enhances
+            the website in some way.
+          </div>
         </div>
       </div>
+      <div class="title">Process and Insight:</div>
+      <hr />
+      <div class="subhead">Research:</div>
+      <div class="details">
+        In order to figure out the proper solution to the problem of the Golf le
+        Fleur website I analyzed the website and looked for things that I could
+        improve. I looked at the home page where there were images of all of the
+        products and noticed that there were no details on the product. Only
+        once I clicked it could I see the name and different color options for
+        the product. I figured that a users main goal is to purchase an item as
+        quick as possible and they don't want to have to keep clicking in order
+        to find details on the product and add it to cart. I did market research
+        by looking at other clothing stores and saw that they had a quick add
+        option and that a user could easily switch through the color options
+        without going to the item detail page.
+      </div>
+      <div class="subhead">Code:</div>
+      <div class="details">
+        For the alpha build portion of the assignment I made my one interaction
+        hover on and off. A box with a border and GLF 2.0 would need to appear
+        over the shoe. I looked on code pen for how to do hover on and off for
+        text and a background with a border and found a similar project so I was
+        able to easily code it.
+      </div>
+      <div class="details">
+        For the beta build portion of the project I needed to put the same hover
+        on and off function on the smaller different colored shoes and get the
+        big image of the shoe to change color when you clicked on them. I found
+        a video online explaing how to make an image change when clicking on a
+        button which helped me to undestand how to apply the same concept to my
+        code!
+      </div>
+      <div class="details">
+        The last steps for the final project was put in a cart icon so that when
+        a user hovered on it, it would enlargen and then when they clicked on it
+        a one would pop up over it. I ran into an issue was making the cart icon
+        change, but figured it out through research and remembering that the
+        order of my variables can impact the functionality of my code. I
+        realized that I had attatched my javascript file that was for the cart
+        icon at the bottom of the page so it wasn't reading it when I was
+        running the code, which was a very foolish mistake that I only noticed
+        after an hour of struggling. I also had an issue that when I would hover
+        near the large image it would start flickering. I realized that this
+        meant that my target area was too big so I made the image smaller. Once
+        I implemented these two fixes my final project was finally working
+        perfectly!
+      </div>
+      <div class="title">The Solution:</div>
+      <hr />
+      <img src="img/orangeex.png" class="orange" alt="orange" />
+      <div class="details">
+        In the end I decided to make the cart above the box so that it didn't
+        look like it was awkardly floating to the side of the shoe. Now when the
+        user hovers on the shoe the box with the text and border forms right
+        under the cart. To interact with the cart the user can hover over it to
+        enlarge it and then click to add to cart. Then when the user hovers over
+        the shoes a solid black border forms around it which signals that it can
+        be clicked and that way the user can change the shoe color on the large
+        image.
+      </div>
+      <div class="title">The Results:</div>
+      <hr />
+      <div class="details">
+        This project ended up being a success because all 5 of the triggers work
+        and it allows the user to quickly preview an item and add it to their
+        cart, which was not possible before.
+      </div>
     </div>
+
     <div class="copyright">
       <span>&#169;</span>Image is curtesy of GOLF Le FLEUR,
       https://golflefleur.com
